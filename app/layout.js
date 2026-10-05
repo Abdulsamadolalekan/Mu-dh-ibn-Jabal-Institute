@@ -24,7 +24,7 @@ const siteDescription =
 export const metadata = {
   // Resolves relative tags (og:image) to the deployed origin.
   // If the site moves to a custom domain, update this one line.
-  metadataBase: new URL("https://muadh-ibn-jabal-institute.vercel.app"),
+  metadataBase: new URL("https://mu-dh-ibn-jabal-institute.vercel.app"),
   title: siteTitle,
   description: siteDescription,
   applicationName: "Mu'ādh ibn Jabal Institute",
