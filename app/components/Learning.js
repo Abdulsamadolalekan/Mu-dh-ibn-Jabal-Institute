@@ -6,13 +6,13 @@ import { ADDRESS_LINE_1, ADDRESS_LINE_2, WA_LINKS } from "../lib/institute";
 
 /**
  * Learning options — in person or online.
- * Two panels, two temperaments: the physical classroom is a full
- * dark panel (solid, present); online learning is a light,
- * outlined panel (open, reachable). Same standard either way.
+ * Two panels, two temperaments on warm paper: the classroom is
+ * deep chocolate (present, solid); online is a light panel with
+ * a hairline (open, reachable). One CTA serves both.
  */
 export default function Learning() {
   return (
-    <section id="learning" className="bg-cream-50 py-24 text-chocolate-950 lg:py-32">
+    <section id="learning" className="bg-cream-100 py-24 text-chocolate-950 lg:py-32">
       <div className="container-x">
         <div className="max-w-2xl">
           <AnimateOnScroll>
@@ -26,7 +26,7 @@ export default function Learning() {
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-12">
-          {/* In person — dark panel */}
+          {/* In person — deep chocolate panel */}
           <AnimateOnScroll className="lg:col-span-7">
             <div className="relative flex h-full min-h-[400px] flex-col overflow-hidden bg-chocolate-950 p-10 text-cream-50 sm:p-14">
               <StarMotif className="pointer-events-none absolute -bottom-28 -right-28 h-80 w-80 text-cream-50/[0.07]" />
@@ -37,9 +37,9 @@ export default function Learning() {
                 Learn With Us In Person
               </h3>
               <p className="mt-5 max-w-md leading-relaxed text-cream-300">
-                Our classroom is Kamadupe Masjid, Adeun, Abeokuta — a focused
-                environment where students learn together, side by side, with
-                their teachers close at hand.
+                Our classroom is Kamadupe Masjid in Adeun, Abeokuta. Students
+                learn together, side by side, with their teachers close at
+                hand.
               </p>
               <div className="relative mt-auto pt-12">
                 <p className="font-display text-xl text-cream-100 sm:text-2xl">
@@ -52,7 +52,7 @@ export default function Learning() {
 
           {/* Online — light panel */}
           <AnimateOnScroll delay={0.1} className="lg:col-span-5">
-            <div className="flex h-full min-h-[400px] flex-col border border-chocolate-950/25 p-10 sm:p-14">
+            <div className="flex h-full min-h-[400px] flex-col border border-chocolate-950/20 bg-cream-50 p-10 sm:p-14">
               <p className="text-[11px] font-medium uppercase tracking-[0.34em] text-chocolate-600">
                 Online
               </p>
@@ -60,13 +60,13 @@ export default function Learning() {
                 Learn With Us Online
               </h3>
               <p className="mt-5 max-w-md leading-relaxed text-chocolate-700">
-                Distance learners study with the same structure and the same
-                care — guided step by step, at a steady pace.
+                Students who cannot travel to Abeokuta still study with us.
+                Online learners follow the same path, guided step by step.
               </p>
               <div className="mt-auto pt-12">
-                <CtaLink href={WA_LINKS.learning} variant="text" tone="onLight" icon="arrow">
-                  Enquire about online learning
-                </CtaLink>
+                <p className="text-sm leading-relaxed text-chocolate-600">
+                  For details on online learning, speak with us on WhatsApp.
+                </p>
               </div>
             </div>
           </AnimateOnScroll>
@@ -79,7 +79,7 @@ export default function Learning() {
             tone="onLight"
             icon="whatsapp"
           >
-            Ask About Learning Options
+            Ask about learning options
           </CtaLink>
         </AnimateOnScroll>
       </div>

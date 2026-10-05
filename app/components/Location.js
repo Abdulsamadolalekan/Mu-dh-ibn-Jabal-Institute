@@ -13,22 +13,22 @@ import {
 } from "../lib/institute";
 
 /**
- * Find Us — location, phone and WhatsApp, with a stylised map
- * panel. The map is an abstract study of the area (streets,
- * blocks, rings) — deliberately not an iframe, so it never
- * fights the design.
+ * Find Us — location, phone and WhatsApp, with a stylised map.
+ * The map is an abstract study of the area in deep chocolate:
+ * streets, blocks, and a quiet ring around the marker. It is
+ * deliberately not an iframe, so it never fights the design.
  */
 export default function Location() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section id="location" className="bg-chocolate-950 py-24 text-cream-50 lg:py-32">
+    <section id="location" className="bg-cream-100 py-24 text-chocolate-950 lg:py-32">
       <div className="container-x">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-12">
           {/* Details */}
           <div className="lg:col-span-6">
             <AnimateOnScroll>
-              <SectionLabel tone="onDark">Visit the Institute</SectionLabel>
+              <SectionLabel tone="onLight">Visit the Institute</SectionLabel>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.08}>
               <h2 className="mt-7 font-display text-4xl leading-[1.08] sm:text-5xl">
@@ -36,7 +36,7 @@ export default function Location() {
               </h2>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.14}>
-              <address className="mt-9 font-display text-2xl not-italic leading-snug text-cream-100 sm:text-3xl">
+              <address className="mt-9 font-display text-2xl not-italic leading-snug sm:text-3xl">
                 {ADDRESS_LINE_1}
                 <br />
                 {ADDRESS_LINE_2}
@@ -45,25 +45,25 @@ export default function Location() {
 
             <div className="mt-12 grid gap-9 sm:grid-cols-2">
               <AnimateOnScroll delay={0.18}>
-                <p className="text-[11px] font-medium uppercase tracking-[0.32em] text-cream-400">
+                <p className="text-[11px] font-medium uppercase tracking-[0.32em] text-chocolate-600">
                   Phone
                 </p>
                 <a
                   href={PHONE_TEL}
-                  className="link-underline mt-3 inline-block font-display text-2xl text-cream-50"
+                  className="link-underline mt-3 inline-block font-display text-2xl"
                 >
                   {PHONE_DISPLAY}
                 </a>
               </AnimateOnScroll>
               <AnimateOnScroll delay={0.24}>
-                <p className="text-[11px] font-medium uppercase tracking-[0.32em] text-cream-400">
+                <p className="text-[11px] font-medium uppercase tracking-[0.32em] text-chocolate-600">
                   WhatsApp
                 </p>
                 <a
                   href={WA_LINKS.general}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="link-underline mt-3 inline-block font-display text-2xl text-cream-50"
+                  className="link-underline mt-3 inline-block font-display text-2xl"
                 >
                   {WHATSAPP_DISPLAY}
                 </a>
@@ -74,7 +74,7 @@ export default function Location() {
           {/* Stylised map */}
           <div className="lg:col-span-6">
             <AnimateOnScroll y={0}>
-              <div className="relative h-full min-h-[420px] overflow-hidden border border-cream-50/12 bg-chocolate-900/50">
+              <div className="relative h-full min-h-[420px] overflow-hidden bg-chocolate-950">
                 <MapArt reduceMotion={reduceMotion} />
                 <p className="absolute bottom-5 left-5 text-[11px] font-medium uppercase tracking-[0.28em] text-cream-400">
                   Kamadupe Masjid · Adeun, Abeokuta
@@ -90,7 +90,7 @@ export default function Location() {
 
 /**
  * Abstract map — streets, blocks and a quiet ring around the
- * marker. No street names, no iframe; just the feel of a place.
+ * marker. No street names; just the feel of a place.
  */
 function MapArt({ reduceMotion }) {
   return (

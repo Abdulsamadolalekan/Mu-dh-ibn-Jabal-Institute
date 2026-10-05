@@ -73,7 +73,7 @@ export default function FinalCta() {
                 Enquire on WhatsApp
               </CtaLink>
               <CtaLink href={PHONE_TEL} variant="outline" tone="onLight">
-                Call the Institute
+                Call the institute
               </CtaLink>
             </div>
           </AnimateOnScroll>

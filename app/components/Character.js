@@ -2,9 +2,9 @@ import AnimateOnScroll from "./AnimateOnScroll";
 import StarMotif from "./StarMotif";
 
 /**
- * Character — the emotional centre of the page.
- * Nothing but type, space and a whisper of geometry. The words
- * are allowed to be large because there is nothing competing.
+ * Character — the second dark movement of the page.
+ * Nothing but type, space, and a whisper of geometry. A
+ * statement of educational philosophy, not a poster.
  */
 export default function Character() {
   return (
@@ -25,7 +25,7 @@ export default function Character() {
 
         <AnimateOnScroll delay={0.15}>
           <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-cream-300 sm:text-lg">
-            We want students who carry what they learn beyond the classroom —
+            We teach students to carry what they learn beyond the classroom,
             into their manners, their discipline, and the way they treat the
             people around them. Knowledge that does not shape character is
             only half learned.

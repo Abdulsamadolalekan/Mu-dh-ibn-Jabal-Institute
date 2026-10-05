@@ -140,10 +140,10 @@ export default function MobileMenu({ open, onClose }) {
               </CtaLink>
               <div className="mt-7 space-y-1.5 text-sm text-cream-400">
                 <a href={PHONE_TEL} className="block transition-colors hover:text-cream-200">
-                  Phone — {PHONE_DISPLAY}
+                  Phone: {PHONE_DISPLAY}
                 </a>
                 <a href={WA_LINKS.general} className="block transition-colors hover:text-cream-200">
-                  WhatsApp — {WHATSAPP_DISPLAY}
+                  WhatsApp: {WHATSAPP_DISPLAY}
                 </a>
               </div>
             </div>

@@ -4,7 +4,7 @@ import CtaLink from "./CtaLink";
 import { WA_LINKS } from "../lib/institute";
 
 const LIST = [
-  "Qur'ān and proper Tajwīd",
+  "Qur'ān and proper tajwīd",
   "Islamic Studies",
   "Arabic Language",
   "Discipline and self-responsibility",
@@ -12,9 +12,10 @@ const LIST = [
 ];
 
 /**
- * For Parents — a quiet, sincere invitation. No testimonials,
- * no statistics, no superlatives. Just what the child will
- * learn, and an open door.
+ * For Parents.
+ * A parent arriving here is asking: can I trust this place, what
+ * exactly is taught, and how do I ask questions? This section
+ * answers plainly, with no borrowed credibility.
  */
 export default function Parents() {
   return (
@@ -26,7 +27,7 @@ export default function Parents() {
               <SectionLabel tone="onLight">06 · For Parents</SectionLabel>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.08}>
-              <h2 className="mt-7 font-display text-4xl leading-[1.08] text-balance sm:text-5xl">
+              <h2 className="mt-7 font-display text-4xl leading-[1.1] text-balance sm:text-5xl">
                 Give Your Child a Stronger Foundation
               </h2>
             </AnimateOnScroll>
@@ -34,22 +35,22 @@ export default function Parents() {
               <div className="mt-9 max-w-xl space-y-5 text-[15px] leading-relaxed text-chocolate-700 sm:text-base">
                 <p>
                   Every child deserves to grow up with the Qur'ān close to
-                  the heart and good character in daily life. At the
-                  Institute, your child learns Qur'ān, Islamic knowledge,
-                  Arabic and Tajwīd — alongside the discipline and manners
-                  that turn knowledge into a way of living.
+                  the heart. At the Institute, your child learns the Qur'ān,
+                  Islamic knowledge, Arabic, and tajwīd, alongside the
+                  discipline and manners that turn knowledge into a way of
+                  living.
                 </p>
                 <p>
                   We keep the learning honest and the pace steady. If you
-                  would like to speak with us about your child&rsquo;s
-                  studies, we would be glad to hear from you.
+                  would like to speak with us about your child's studies,
+                  we would be glad to hear from you.
                 </p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.22}>
               <div className="mt-10">
                 <CtaLink href={WA_LINKS.general} variant="primary" tone="onLight" icon="whatsapp">
-                  Speak With Us
+                  Speak with us
                 </CtaLink>
               </div>
             </AnimateOnScroll>
@@ -73,7 +74,7 @@ export default function Parents() {
                       <span className="text-[11px] tracking-[0.24em] text-chocolate-600">
                         0{i + 1}
                       </span>
-                      <span className="font-display text-xl leading-snug text-chocolate-950 sm:text-[1.4rem]">
+                      <span className="font-display text-xl leading-snug sm:text-[1.4rem]">
                         {item}
                       </span>
                     </div>

@@ -12,8 +12,8 @@ export default function Navigation() {
   const [open, setOpen] = useState(false);
   const triggerRef = useRef(null);
 
-  // Scroll-reactive background: transparent over the hero, dark once
-  // the visitor begins to scroll.
+  // Scroll-reactive background: transparent over the cream hero, a
+  // solid paper bar with a hairline once the visitor scrolls.
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
@@ -32,7 +32,7 @@ export default function Navigation() {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
           scrolled || open
-            ? "border-b border-cream-50/10 bg-chocolate-950/95 backdrop-blur-md"
+            ? "border-b border-chocolate-950/10 bg-cream-50/95 backdrop-blur-md"
             : "border-b border-transparent bg-transparent"
         }`}
       >
@@ -40,15 +40,15 @@ export default function Navigation() {
           {/* Brand */}
           <a
             href="#home"
-            className="group flex min-h-[44px] items-center gap-3 text-cream-50"
+            className="group flex min-h-[44px] items-center gap-3 text-chocolate-950"
             aria-label="Mu'ādh ibn Jabal Institute — back to top"
           >
-            <BrandMark className="h-10 w-10 shrink-0 text-cream-50 transition-transform duration-500 group-hover:rotate-[22.5deg]" />
+            <BrandMark className="h-10 w-10 shrink-0 text-chocolate-950 transition-transform duration-500 group-hover:rotate-[22.5deg]" />
             <span className="flex flex-col leading-tight">
               <span className="font-display text-[17px] tracking-wide">
                 Mu'ādh ibn Jabal
               </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.34em] text-cream-400">
+              <span className="text-[10px] font-medium uppercase tracking-[0.34em] text-chocolate-500">
                 Institute
               </span>
             </span>
@@ -61,7 +61,7 @@ export default function Navigation() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="link-underline flex min-h-[44px] items-center text-sm tracking-wide text-cream-200 transition-colors duration-300 hover:text-cream-50"
+                    className="link-underline flex min-h-[44px] items-center text-sm tracking-wide text-chocolate-700 transition-colors duration-300 hover:text-chocolate-950"
                   >
                     {link.label}
                   </a>
@@ -76,7 +76,7 @@ export default function Navigation() {
               <CtaLink
                 href={WA_LINKS.general}
                 variant="primary"
-                tone="onDark"
+                tone="onLight"
                 icon="whatsapp"
                 size="sm"
               >
@@ -108,7 +108,7 @@ function MobileMenuButton({ open, onToggle, triggerRef }) {
       aria-expanded={open}
       aria-controls="mobile-menu"
       aria-label={open ? "Close menu" : "Open menu"}
-      className="relative flex h-11 w-11 items-center justify-center text-cream-50 lg:hidden"
+      className="relative flex h-11 w-11 items-center justify-center text-chocolate-950 lg:hidden"
     >
       <span
         aria-hidden="true"

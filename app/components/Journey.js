@@ -8,45 +8,40 @@ const STAGES = [
   {
     num: "01",
     title: "Learn",
-    text: "The Qur'ān, its correct recitation, and the foundations of the faith.",
+    text: "The Qur'ān, its recitation, and the foundations of the faith.",
   },
   {
     num: "02",
     title: "Understand",
-    text: "Arabic and Islamic Studies give every lesson its meaning.",
+    text: "Arabic and Islamic studies give every lesson its meaning.",
   },
   {
     num: "03",
     title: "Practice",
-    text: "Daily recitation and revision — the habits that make knowledge permanent.",
+    text: "Daily recitation and revision, and the habits that make knowledge permanent.",
   },
   {
     num: "04",
     title: "Live It",
-    text: "What is learned is carried into manners, discipline and everyday life.",
+    text: "What is learned is carried into manners, discipline, and everyday life.",
   },
 ];
 
 /**
  * The Learning Journey — four stages on a single thread.
- * On desktop the hairline draws itself across the numbers as the
- * section enters the viewport; on mobile it becomes a quiet
- * vertical path down the page.
+ * A quiet cream movement between the two dark ones. On desktop
+ * the hairline draws itself across the numbers as the section
+ * enters the viewport; on mobile it becomes a vertical path.
  */
 export default function Journey() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="relative overflow-hidden bg-chocolate-950 py-24 text-cream-50 lg:py-32">
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(201,183,154,0.06),transparent_55%)]"
-      />
-
+    <section className="relative overflow-hidden bg-cream-50 py-24 text-chocolate-950 lg:py-32">
       <div className="container-x relative">
         <div className="max-w-2xl">
           <AnimateOnScroll>
-            <SectionLabel tone="onDark">04 · The Learning Journey</SectionLabel>
+            <SectionLabel tone="onLight">04 · The Learning Journey</SectionLabel>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.08}>
             <h2 className="mt-7 font-display text-4xl leading-[1.08] text-balance sm:text-5xl">
@@ -59,7 +54,7 @@ export default function Journey() {
         <div className="relative mt-20 hidden lg:block">
           <motion.div
             aria-hidden="true"
-            className="absolute left-0 right-0 top-6 h-px origin-left bg-cream-50/20"
+            className="absolute left-0 right-0 top-6 h-px origin-left bg-chocolate-950/15"
             initial={reduceMotion ? false : { scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true, margin: "-120px" }}
@@ -70,15 +65,13 @@ export default function Journey() {
               <li key={stage.num}>
                 <AnimateOnScroll delay={0.15 + i * 0.1}>
                   <span
-                    className="relative z-10 inline-block bg-chocolate-950 pr-6 font-display text-5xl italic leading-none text-cream-400"
+                    className="relative z-10 inline-block bg-cream-50 pr-6 font-display text-5xl italic leading-none text-chocolate-400"
                     aria-hidden="true"
                   >
                     {stage.num}
                   </span>
-                  <h3 className="mt-6 font-display text-2xl text-cream-50">
-                    {stage.title}
-                  </h3>
-                  <p className="mt-3 max-w-[15.5rem] text-sm leading-relaxed text-cream-300/85">
+                  <h3 className="mt-6 font-display text-2xl">{stage.title}</h3>
+                  <p className="mt-3 max-w-[15.5rem] text-sm leading-relaxed text-chocolate-700">
                     {stage.text}
                   </p>
                 </AnimateOnScroll>
@@ -91,24 +84,22 @@ export default function Journey() {
         <ol className="relative mt-16 lg:hidden">
           <span
             aria-hidden="true"
-            className="absolute bottom-8 left-5 top-2 w-px bg-cream-50/20"
+            className="absolute bottom-8 left-5 top-2 w-px bg-chocolate-950/15"
           />
           {STAGES.map((stage, i) => (
             <li key={stage.num} className="relative flex gap-7 pb-12 last:pb-0">
               <span
                 aria-hidden="true"
-                className="relative z-10 mt-1 flex h-10 w-10 shrink-0 items-center justify-center bg-chocolate-950"
+                className="relative z-10 mt-1 flex h-10 w-10 shrink-0 items-center justify-center bg-cream-50"
               >
-                <span className="h-2 w-2 rotate-45 bg-cream-400" />
+                <span className="h-2 w-2 rotate-45 bg-chocolate-500" />
               </span>
               <AnimateOnScroll delay={i * 0.05} className="min-w-0">
-                <span className="text-[11px] font-medium tracking-[0.3em] text-cream-400/70">
+                <span className="text-[11px] font-medium tracking-[0.3em] text-chocolate-600">
                   {stage.num}
                 </span>
-                <h3 className="mt-2.5 font-display text-2xl text-cream-50">
-                  {stage.title}
-                </h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-cream-300/85">
+                <h3 className="mt-2.5 font-display text-2xl">{stage.title}</h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-chocolate-700">
                   {stage.text}
                 </p>
               </AnimateOnScroll>

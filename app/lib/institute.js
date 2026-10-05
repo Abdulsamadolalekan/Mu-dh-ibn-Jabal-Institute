@@ -38,35 +38,35 @@ export const PROGRAMS = [
     number: "01",
     name: "Qur'ān Memorization (Hifz)",
     short:
-      "A complete, structured path to memorizing the Qur'ān — measured learning, steady revision, and careful correction of recitation.",
+      "Memorization is the heart of the Institute. Students learn the Qur'ān portion by portion, revise it until it is secure, and are corrected in recitation as they go. The pace is measured, and it follows the student.",
   },
   {
     id: "tajweed",
     number: "02",
     name: "Proper Tajwīd",
     short:
-      "The rules of recitation — so the Qur'ān is read the way it was revealed, beautifully and correctly.",
+      "The rules of recitation. Tajwīd teaches students to read the Qur'ān as it was revealed, with correct pronunciation and a steady, beautiful rhythm.",
   },
   {
     id: "islamic-studies",
     number: "03",
     name: "Islamic Studies",
     short:
-      "The foundations of the faith: beliefs, worship, and the lessons of the lives of the Prophets.",
+      "The fundamentals of the faith, and the lessons of the Prophets' lives that give them meaning.",
   },
   {
     id: "arabic",
     number: "04",
     name: "Arabic Language",
     short:
-      "Reading, writing and understanding the language of the Qur'ān — from the alphabet to grammar.",
+      "Reading, writing, and understanding the language of the Qur'ān, from its letters to its grammar.",
   },
   {
     id: "character",
     number: "05",
     name: "Character Building",
     short:
-      "Sincerity, humility, patience and self-discipline — the qualities that give knowledge its value.",
+      "Sincerity, humility, patience, and self-discipline. The qualities that keep knowledge honest.",
   },
   {
     id: "manners",

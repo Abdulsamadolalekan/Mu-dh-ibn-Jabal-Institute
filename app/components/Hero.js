@@ -8,9 +8,10 @@ import { ADDRESS_LINE_1, WA_LINKS } from "../lib/institute";
 const EASE = [0.22, 1, 0.36, 1];
 
 /**
- * Hero — the single statement the whole site is built on.
- * Typographic, full-height, dark. Geometry stays at the edges,
- * barely visible; the words do the work.
+ * Hero — the frontispiece of the site.
+ * Warm cream, deep chocolate type, one idea presented with
+ * space to breathe: what the Institute teaches, where it is,
+ * and how to reach it.
  */
 export default function Hero() {
   const reduceMotion = useReducedMotion();
@@ -29,21 +30,17 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-chocolate-950"
+      className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-cream-50"
     >
-      {/* Ambient warmth, top-right and bottom-left */}
+      {/* A whisper of warmth, top right */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(120%_90%_at_85%_0%,rgba(201,183,154,0.09),transparent_55%)]"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(75%_55%_at_0%_100%,rgba(201,183,154,0.05),transparent_60%)]"
+        className="absolute inset-0 bg-[radial-gradient(120%_90%_at_85%_0%,rgba(26,14,10,0.05),transparent_55%)]"
       />
 
-      {/* Quiet geometry */}
-      <StarMotif className="pointer-events-none absolute -right-48 top-1/2 hidden h-[580px] w-[580px] -translate-y-1/2 text-cream-50/[0.055] sm:block" />
-      <StarMotif className="pointer-events-none absolute -bottom-28 -left-28 h-80 w-80 text-cream-50/[0.04]" />
+      {/* Quiet geometry, in ink at low strength */}
+      <StarMotif className="pointer-events-none absolute -right-48 top-1/2 hidden h-[580px] w-[580px] -translate-y-1/2 text-chocolate-950/[0.05] sm:block" />
+      <StarMotif className="pointer-events-none absolute -bottom-28 -left-28 h-80 w-80 text-chocolate-950/[0.04]" />
 
       <motion.div
         variants={container}
@@ -53,45 +50,43 @@ export default function Hero() {
       >
         <motion.p
           variants={item}
-          className="text-[11px] font-medium uppercase tracking-[0.34em] text-cream-400"
+          className="text-[11px] font-medium uppercase tracking-[0.34em] text-chocolate-600"
         >
-          Islamic Education · Abeokuta, Nigeria
+          Islamic Education in Abeokuta
         </motion.p>
 
         <motion.h1
           variants={item}
-          className="mt-9 max-w-5xl font-display text-[34px] leading-[1.12] text-cream-50 sm:text-[44px] sm:leading-[1.08] md:text-[51px] lg:text-[68px] xl:text-[74px]"
+          className="mt-9 max-w-5xl font-display text-[34px] leading-[1.12] text-chocolate-950 sm:text-[44px] sm:leading-[1.08] md:text-[51px] lg:text-[68px] xl:text-[74px]"
         >
           <span className="block">Preparing Muslim generation</span>
           <span className="block">with knowledge and</span>
-          <span className="block italic text-cream-300">noble character</span>
+          <span className="block italic text-chocolate-500">noble character</span>
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="mt-9 max-w-xl text-base leading-relaxed text-cream-300 sm:text-lg"
+          className="mt-9 max-w-xl text-base leading-relaxed text-chocolate-700 sm:text-lg"
         >
-          A structured place to learn the Qur'ān, its correct recitation, the
-          Arabic language and the knowledge of Islam — taught with patience,
-          discipline and care.
+          The Institute teaches the Qur'ān and its recitation, the Arabic
+          language, Islamic knowledge, and the manners that carry them.
         </motion.p>
 
         <motion.div
           variants={item}
-          className="mt-10 flex flex-col gap-3.5 text-sm text-cream-400 sm:flex-row sm:items-center sm:gap-10"
+          className="mt-10 flex flex-col gap-3.5 text-sm text-chocolate-600 sm:flex-row sm:items-center sm:gap-10"
         >
           <span className="flex items-center gap-3.5">
-            <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rotate-45 bg-cream-400/90" />
+            <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rotate-45 bg-chocolate-400" />
             <span>
-              <span className="text-cream-100">Physical Learning</span> —{" "}
-              {ADDRESS_LINE_1}
+              In person at{" "}
+              <span className="text-chocolate-950">{ADDRESS_LINE_1}</span>
             </span>
           </span>
           <span className="flex items-center gap-3.5">
-            <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rotate-45 bg-cream-400/90" />
+            <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rotate-45 bg-chocolate-400" />
             <span>
-              <span className="text-cream-100">Online Learning</span> — from
-              anywhere
+              Online, <span className="text-chocolate-950">from anywhere</span>
             </span>
           </span>
         </motion.div>
@@ -100,11 +95,11 @@ export default function Hero() {
           variants={item}
           className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-10"
         >
-          <CtaLink href={WA_LINKS.general} variant="primary" tone="onDark" icon="whatsapp">
+          <CtaLink href={WA_LINKS.general} variant="primary" tone="onLight" icon="whatsapp">
             Enquire on WhatsApp
           </CtaLink>
-          <CtaLink href="#programs" variant="text" tone="onDark" icon="arrow">
-            Explore Our Programs
+          <CtaLink href="#programs" variant="text" tone="onLight" icon="arrow">
+            Explore our programs
           </CtaLink>
         </motion.div>
       </motion.div>

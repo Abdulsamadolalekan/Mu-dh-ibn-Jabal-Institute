@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 const siteTitle = "Mu'ādh ibn Jabal Institute — Islamic Education in Abeokuta";
 
 const siteDescription =
-  "Mu'ādh ibn Jabal Institute offers structured Islamic education in Abeokuta, Ogun State — Qur'an memorization (Hifz), proper Tajweed, Islamic Studies, Arabic classes, character building and good manners — in person at Kamadupe Masjid, Adeun, and online.";
+  "Mu'ādh ibn Jabal Institute offers structured Islamic education in Abeokuta, Ogun State. Programs include Qur'an memorization (Hifz), proper Tajweed, Islamic Studies, and Arabic classes, with physical learning at Kamadupe Masjid, Adeun, and online learning for distance students.";
 
 export const metadata = {
   title: siteTitle,
