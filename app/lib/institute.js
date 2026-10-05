@@ -28,6 +28,11 @@ export const PHONE_TEL = "tel:07025069442";
 export const ADDRESS_LINE_1 = "Kamadupe Masjid, Adeun";
 export const ADDRESS_LINE_2 = "Abeokuta, Ogun State, Nigeria";
 
+/** Deep link that opens Kamadupe Masjid, Adeun in Google Maps. */
+export const GOOGLE_MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=" +
+  encodeURIComponent("Kamadupe Masjid, Adeun, Abeokuta, Ogun State");
+
 /* ------------------------------------------------------------------ */
 /* Programs                                                            */
 /* ------------------------------------------------------------------ */

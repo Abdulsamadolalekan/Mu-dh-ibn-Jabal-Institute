@@ -6,6 +6,7 @@ import SectionLabel from "./SectionLabel";
 import {
   ADDRESS_LINE_1,
   ADDRESS_LINE_2,
+  GOOGLE_MAPS_URL,
   PHONE_TEL,
   PHONE_DISPLAY,
   WHATSAPP_DISPLAY,
@@ -41,6 +42,25 @@ export default function Location() {
                 <br />
                 {ADDRESS_LINE_2}
               </address>
+              <a
+                href={GOOGLE_MAPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-underline mt-5 inline-flex min-h-[44px] items-center gap-2 text-sm font-medium text-chocolate-950"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  className="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11Z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+                Open in Google Maps
+              </a>
             </AnimateOnScroll>
 
             <div className="mt-12 grid gap-9 sm:grid-cols-2">

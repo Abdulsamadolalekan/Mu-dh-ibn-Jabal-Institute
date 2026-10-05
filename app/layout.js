@@ -22,6 +22,9 @@ const siteDescription =
   "Mu'ādh ibn Jabal Institute offers structured Islamic education in Abeokuta, Ogun State. Programs include Qur'an memorization (Hifz), proper Tajweed, Islamic Studies, and Arabic classes, with physical learning at Kamadupe Masjid, Adeun, and online learning for distance students.";
 
 export const metadata = {
+  // Resolves relative tags (og:image) to the deployed origin.
+  // If the site moves to a custom domain, update this one line.
+  metadataBase: new URL("https://muadh-ibn-jabal-institute.vercel.app"),
   title: siteTitle,
   description: siteDescription,
   applicationName: "Mu'ādh ibn Jabal Institute",
@@ -31,9 +34,17 @@ export const metadata = {
     type: "website",
     siteName: "Mu'ādh ibn Jabal Institute",
     locale: "en_NG",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mu'ādh ibn Jabal Institute — Islamic education in Abeokuta, in person and online",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
   },
