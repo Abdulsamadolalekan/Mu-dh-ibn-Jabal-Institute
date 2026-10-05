@@ -57,10 +57,10 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="mt-10 max-w-5xl font-display text-[40px] font-medium leading-[1.07] tracking-[-0.01em] text-balance text-chocolate-950 md:text-[54px] lg:text-[70px] xl:text-[78px]"
+          className="mt-10 max-w-[1080px] font-display text-[40px] font-semibold leading-[1.07] tracking-[-0.01em] text-balance text-chocolate-950 md:text-[54px] lg:text-[74px] xl:text-[84px]"
         >
           The Qur'ān, portion by portion.{" "}
-          <em className="text-chocolate-500">The character, day by day.</em>
+          <em className="text-chocolate-600">The character, day by day.</em>
         </motion.h1>
 
         <motion.p
@@ -73,7 +73,7 @@ export default function Hero() {
 
         <motion.div
           variants={item}
-          className="mt-9 flex flex-col gap-3.5 text-sm text-chocolate-600 sm:flex-row sm:items-center sm:gap-10"
+          className="mt-9 flex flex-col gap-3.5 text-[15px] text-chocolate-700 sm:flex-row sm:items-center sm:gap-10"
         >
           <span className="flex items-center gap-3.5">
             <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rotate-45 bg-chocolate-400" />
