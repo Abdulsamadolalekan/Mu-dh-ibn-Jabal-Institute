@@ -3,7 +3,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { NAV_LINKS } from "../lib/nav";
 import { WA_LINKS } from "../lib/institute";
-import BrandMark from "./BrandMark";
 import CtaLink from "./CtaLink";
 import MobileMenu from "./MobileMenu";
 
@@ -43,7 +42,12 @@ export default function Navigation() {
             className="group flex min-h-[44px] items-center gap-3 text-chocolate-950"
             aria-label="Mu'ādh ibn Jabal Institute — back to top"
           >
-            <BrandMark className="h-10 w-10 shrink-0 text-chocolate-950 transition-transform duration-500 group-hover:rotate-[22.5deg]" />
+            <img
+              src="/logo-icon.png"
+              alt=""
+              aria-hidden="true"
+              className="h-10 w-auto shrink-0"
+            />
             <span className="flex flex-col leading-tight">
               <span className="font-display text-[19px] font-medium tracking-[0.01em]">
                 Mu'ādh ibn Jabal

@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { NAV_LINKS } from "../lib/nav";
 import { WA_LINKS, PHONE_TEL, PHONE_DISPLAY, WHATSAPP_DISPLAY } from "../lib/institute";
-import BrandMark from "./BrandMark";
 import CtaLink from "./CtaLink";
 
 const EASE = [0.22, 1, 0.36, 1];
@@ -78,7 +77,7 @@ export default function MobileMenu({ open, onClose }) {
           >
             {/* Panel header */}
             <div className="flex items-center justify-between border-b border-cream-50/10 px-7 py-5">
-              <BrandMark className="h-9 w-9 text-cream-50" />
+              <img src="/logo-icon-light.png" alt="" aria-hidden="true" className="h-9 w-auto" />
               <button
                 ref={closeRef}
                 type="button"

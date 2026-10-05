@@ -1,4 +1,3 @@
-import BrandMark from "./BrandMark";
 import WhatsAppIcon from "./WhatsAppIcon";
 import {
   TAGLINE,
@@ -28,7 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-4">
             <a href="#home" className="flex items-center gap-3.5" aria-label="Back to top">
-              <BrandMark className="h-10 w-10 text-cream-50" />
+              <img src="/logo-icon-light.png" alt="" aria-hidden="true" className="h-10 w-auto" />
               <span className="flex flex-col leading-tight">
                 <span className="font-display text-[19px] font-medium tracking-[0.01em]">
                   Mu'ādh ibn Jabal
