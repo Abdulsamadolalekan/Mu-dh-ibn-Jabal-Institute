@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/*
+  Mu'ādh ibn Jabal Institute — Design tokens
+
+  Anchor: dark chocolate. Foundation: warm cream.
+  One warm brown scale (chocolate) + one warm neutral scale (cream).
+  No other hues — the entire site is built from these two families.
+*/
+
+:root {
+  --chocolate-950: #1a0e0a;
+  --chocolate-900: #2e1e12;
+  --chocolate-800: #47301c;
+  --chocolate-700: #624326;
+  --chocolate-600: #7c5735;
+  --chocolate-500: #976e48;
+  --chocolate-400: #b28a62;
+  --chocolate-300: #c9ab89;
+  --chocolate-200: #dcc9b1;
+  --chocolate-100: #ede0d0;
+
+  --cream-50: #faf6f0;
+  --cream-100: #f3ead9;
+  --cream-200: #e8d9bd;
+  --cream-300: #d8c3a2;
+  --cream-400: #c9b79a;
+}
+
+@theme inline {
+  --color-chocolate-950: var(--chocolate-950);
+  --color-chocolate-900: var(--chocolate-900);
+  --color-chocolate-800: var(--chocolate-800);
+  --color-chocolate-700: var(--chocolate-700);
+  --color-chocolate-600: var(--chocolate-600);
+  --color-chocolate-500: var(--chocolate-500);
+  --color-chocolate-400: var(--chocolate-400);
+  --color-chocolate-300: var(--chocolate-300);
+  --color-chocolate-200: var(--chocolate-200);
+  --color-chocolate-100: var(--chocolate-100);
+
+  --color-cream-50: var(--cream-50);
+  --color-cream-100: var(--cream-100);
+  --color-cream-200: var(--cream-200);
+  --color-cream-300: var(--cream-300);
+  --color-cream-400: var(--cream-400);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-playfair-display), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--chocolate-950);
+    color: var(--cream-50);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Anchor targets clear the fixed header when navigated to */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  /* Accessible, unobtrusive keyboard focus that adapts to any background */
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: var(--chocolate-300);
+    color: var(--chocolate-950);
+  }
+}
+
+/*
+  Site container — one consistent content width and gutter rhythm.
+*/
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 76rem;
+  padding-inline: 1.5rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 2.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    padding-inline: 3.5rem;
+  }
+}
+
+/*
+  Editorial link: thin underline that draws in on hover.
+*/
+@utility link-underline {
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* Reduced motion: calm everything down. Framer Motion also checks
+   useReducedMotion() in JS; this covers pure-CSS transitions. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
