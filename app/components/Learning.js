@@ -19,7 +19,7 @@ export default function Learning() {
             <SectionLabel tone="onLight">05 · Learning Options</SectionLabel>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.08}>
-            <h2 className="mt-7 font-display text-4xl leading-[1.08] text-balance sm:text-5xl">
+            <h2 className="mt-7 font-display text-[40px] font-medium leading-[1.1] text-balance md:text-[48px]">
               In person in Abeokuta, or online from home.
             </h2>
           </AnimateOnScroll>
@@ -33,10 +33,10 @@ export default function Learning() {
               <p className="text-[11px] font-medium uppercase tracking-[0.34em] text-cream-400">
                 In Person
               </p>
-              <h3 className="mt-6 font-display text-3xl leading-tight sm:text-4xl">
+              <h3 className="mt-6 font-display text-[27px] font-medium leading-tight md:text-[30px]">
                 Learn With Us In Person
               </h3>
-              <p className="mt-5 max-w-md leading-relaxed text-cream-300">
+              <p className="mt-5 max-w-md leading-[1.7] text-cream-300">
                 Our classroom is Kamadupe Masjid in Adeun, Abeokuta. Students
                 learn together, side by side, with their teachers close at
                 hand.
@@ -56,12 +56,12 @@ export default function Learning() {
               <p className="text-[11px] font-medium uppercase tracking-[0.34em] text-chocolate-600">
                 Online
               </p>
-              <h3 className="mt-6 font-display text-3xl leading-tight sm:text-4xl">
+              <h3 className="mt-6 font-display text-[27px] font-medium leading-tight md:text-[30px]">
                 Learn With Us Online
               </h3>
-              <p className="mt-5 max-w-md leading-relaxed text-chocolate-700">
-                Students who cannot travel to Abeokuta still study with us.
-                Online learners follow the same path, guided step by step.
+              <p className="mt-5 max-w-md leading-[1.7] text-chocolate-700">
+                Students who cannot travel to Abeokuta still study with us,
+                on the same path, guided step by step.
               </p>
               <div className="mt-auto pt-12">
                 <p className="text-sm leading-relaxed text-chocolate-600">

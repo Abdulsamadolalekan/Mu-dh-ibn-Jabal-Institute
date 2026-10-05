@@ -45,10 +45,10 @@ export default function Navigation() {
           >
             <BrandMark className="h-10 w-10 shrink-0 text-chocolate-950 transition-transform duration-500 group-hover:rotate-[22.5deg]" />
             <span className="flex flex-col leading-tight">
-              <span className="font-display text-[17px] tracking-wide">
+              <span className="font-display text-[19px] font-medium tracking-[0.01em]">
                 Mu'ādh ibn Jabal
               </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.34em] text-chocolate-500">
+              <span className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.34em] text-chocolate-500">
                 Institute
               </span>
             </span>

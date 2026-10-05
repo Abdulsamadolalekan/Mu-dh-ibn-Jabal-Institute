@@ -118,7 +118,7 @@ export default function MobileMenu({ open, onClose }) {
                       <span className="text-[11px] tracking-[0.3em] text-cream-400/70 transition-colors group-hover:text-cream-300">
                         0{i + 1}
                       </span>
-                      <span className="font-display text-[28px] leading-none text-cream-50 transition-colors group-hover:text-cream-300">
+                      <span className="font-display text-[28px] font-medium leading-[1.1] text-cream-50 transition-colors group-hover:text-cream-300">
                         {link.label}
                       </span>
                     </a>

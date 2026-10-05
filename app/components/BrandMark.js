@@ -30,7 +30,7 @@ export default function BrandMark({ className = "h-10 w-10" }) {
         stroke="none"
         fill="currentColor"
         style={{
-          fontFamily: "var(--font-playfair-display), Georgia, serif",
+          fontFamily: "var(--font-cormorant-garamond), Georgia, serif",
           fontStyle: "italic",
           fontSize: "16px",
         }}

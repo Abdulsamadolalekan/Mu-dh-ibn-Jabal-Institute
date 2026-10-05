@@ -6,8 +6,8 @@ import { WA_LINKS } from "../lib/institute";
 
 const POINTS = [
   {
-    name: "Structured learning",
-    text: "New portions are introduced slowly, at a pace suited to each student.",
+    name: "Structure",
+    text: "New portions are introduced slowly, at a pace suited to the student.",
   },
   {
     name: "Revision",
@@ -19,7 +19,7 @@ const POINTS = [
   },
   {
     name: "Consistency",
-    text: "The journey is measured in years. Small, steady effort is what carries it.",
+    text: "Hifz is measured in years. Small, steady effort is what carries it.",
   },
 ];
 
@@ -40,27 +40,23 @@ export default function HifzFeature() {
               <SectionLabel tone="onDark">03 · Hifz of the Qur'ān</SectionLabel>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.08}>
-              <h2 className="mt-7 font-display text-4xl leading-[1.08] text-balance sm:text-5xl">
-                Begin the Journey of Hifz
+              <h2 className="mt-8 max-w-2xl font-display text-[40px] font-medium leading-[1.12] text-balance md:text-[48px]">
+                Memorizing the Qur'ān is not simply about completing pages.{" "}
+                <em className="text-cream-300">
+                  It is about a lifelong relationship with the Book of
+                  Allah.
+                </em>
               </h2>
             </AnimateOnScroll>
 
-            <AnimateOnScroll delay={0.16}>
-              <blockquote className="mt-9 border-l border-cream-400/50 pl-6 font-display text-xl italic leading-relaxed text-cream-100 sm:text-[1.4rem]">
-                “Memorizing the Qur'ān is not simply about completing pages.
-                It is about building a lifelong relationship with the Book of
-                Allah.”
-              </blockquote>
-            </AnimateOnScroll>
-
-            <div className="mt-11 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+            <div className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2">
               {POINTS.map((point, i) => (
                 <AnimateOnScroll key={point.name} delay={0.1 + i * 0.06}>
                   <div className="border-t border-cream-50/15 pt-4">
-                    <h3 className="text-sm font-semibold tracking-wide text-cream-50">
+                    <h3 className="text-[13px] font-semibold uppercase tracking-[0.18em] text-cream-100">
                       {point.name}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-cream-300/85">
+                    <p className="mt-2.5 text-sm leading-[1.7] text-cream-300/85">
                       {point.text}
                     </p>
                   </div>
@@ -76,7 +72,7 @@ export default function HifzFeature() {
                   tone="onDark"
                   icon="whatsapp"
                 >
-                  Ask about Hifz
+                  Ask about Qur'ān memorization
                 </CtaLink>
               </div>
             </AnimateOnScroll>

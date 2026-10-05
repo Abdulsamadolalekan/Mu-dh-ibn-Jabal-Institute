@@ -57,16 +57,15 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="mt-9 max-w-5xl font-display text-[34px] leading-[1.12] text-chocolate-950 sm:text-[44px] sm:leading-[1.08] md:text-[51px] lg:text-[68px] xl:text-[74px]"
+          className="mt-10 max-w-5xl font-display text-[40px] font-medium leading-[1.07] tracking-[-0.01em] text-balance text-chocolate-950 md:text-[54px] lg:text-[70px] xl:text-[78px]"
         >
-          <span className="block">Preparing Muslim generation</span>
-          <span className="block">with knowledge and</span>
-          <span className="block italic text-chocolate-500">noble character</span>
+          The Qur'ān, portion by portion.{" "}
+          <em className="text-chocolate-500">The character, day by day.</em>
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="mt-9 max-w-xl text-base leading-relaxed text-chocolate-700 sm:text-lg"
+          className="mt-9 max-w-xl text-base leading-[1.7] text-chocolate-700 sm:text-lg"
         >
           The Institute teaches the Qur'ān and its recitation, the Arabic
           language, Islamic knowledge, and the manners that carry them.
@@ -74,7 +73,7 @@ export default function Hero() {
 
         <motion.div
           variants={item}
-          className="mt-10 flex flex-col gap-3.5 text-sm text-chocolate-600 sm:flex-row sm:items-center sm:gap-10"
+          className="mt-9 flex flex-col gap-3.5 text-sm text-chocolate-600 sm:flex-row sm:items-center sm:gap-10"
         >
           <span className="flex items-center gap-3.5">
             <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 rotate-45 bg-chocolate-400" />

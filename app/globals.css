@@ -45,8 +45,26 @@
   --color-cream-300: var(--cream-300);
   --color-cream-400: var(--cream-400);
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: var(--font-playfair-display), ui-serif, Georgia, "Times New Roman", serif;
+  /*
+    Type system
+    ----------
+    Display — Cormorant Garamond (weight 500). Garamond is the
+    typeface of the first Qur'ān printed in Latin letters
+    (Rabba al-ʿĀmirīn, Lyon/Fez, c. 1530), and it carries the
+    same old-style gravity in a heading today.
+    Text — IBM Plex Sans (400/500). Institutional, even, calm.
+
+    Hierarchy (keep the ladder disciplined; do not add rungs):
+      11px   labels (uppercase, 0.32em tracking)
+      14px   navigation, buttons, small UI
+      15–16  body copy, 1.65–1.7 leading, ~60ch max
+      26–30  h3 subheads (display)
+      40–54  h2 section headings (display)
+      56–70  statements (Character, closing CTA)
+      40–78  hero h1
+  */
+  --font-sans: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-cormorant-garamond), ui-serif, Georgia, "Times New Roman", serif;
 }
 
 @layer base {

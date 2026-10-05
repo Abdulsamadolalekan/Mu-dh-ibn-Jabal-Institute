@@ -27,30 +27,32 @@ export default function Parents() {
               <SectionLabel tone="onLight">06 · For Parents</SectionLabel>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.08}>
-              <h2 className="mt-7 font-display text-4xl leading-[1.1] text-balance sm:text-5xl">
-                Give Your Child a Stronger Foundation
+              <h2 className="mt-7 font-display text-[40px] font-medium leading-[1.12] text-balance md:text-[48px]">
+                The Qur'ān, taught properly.
+                <span className="block italic text-chocolate-500">
+                  The child, treated with care.
+                </span>
               </h2>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.16}>
-              <div className="mt-9 max-w-xl space-y-5 text-[15px] leading-relaxed text-chocolate-700 sm:text-base">
+              <div className="mt-9 max-w-xl space-y-5 text-[15px] leading-[1.7] text-chocolate-700 sm:text-base">
                 <p>
-                  Every child deserves to grow up with the Qur'ān close to
-                  the heart. At the Institute, your child learns the Qur'ān,
-                  Islamic knowledge, Arabic, and tajwīd, alongside the
-                  discipline and manners that turn knowledge into a way of
-                  living.
+                  A parent's first question is usually the same. Will my
+                  child learn the Qur'ān properly? That is the first task of
+                  the Institute. Around it, the child learns Arabic, Islamic
+                  knowledge, and the manners that make knowledge useful.
                 </p>
                 <p>
-                  We keep the learning honest and the pace steady. If you
-                  would like to speak with us about your child's studies,
-                  we would be glad to hear from you.
+                  We keep the pace steady and the correction honest. If you
+                  would like to speak with us about your child, we would be
+                  glad to hear from you.
                 </p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.22}>
               <div className="mt-10">
                 <CtaLink href={WA_LINKS.general} variant="primary" tone="onLight" icon="whatsapp">
-                  Speak with us
+                  Speak with the Institute
                 </CtaLink>
               </div>
             </AnimateOnScroll>
@@ -74,7 +76,7 @@ export default function Parents() {
                       <span className="text-[11px] tracking-[0.24em] text-chocolate-600">
                         0{i + 1}
                       </span>
-                      <span className="font-display text-xl leading-snug sm:text-[1.4rem]">
+                      <span className="font-display text-[22px] font-medium leading-snug md:text-[24px]">
                         {item}
                       </span>
                     </div>

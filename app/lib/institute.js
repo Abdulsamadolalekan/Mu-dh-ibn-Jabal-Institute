@@ -6,7 +6,7 @@
 
 export const INSTITUTE_NAME = "Mu'ādh ibn Jabal Institute";
 export const TAGLINE =
-  "Preparing Muslim generation with knowledge and noble character";
+  "The Qur'ān, portion by portion. The character, day by day.";
 
 /* ------------------------------------------------------------------ */
 /* Contact                                                             */
@@ -38,28 +38,28 @@ export const PROGRAMS = [
     number: "01",
     name: "Qur'ān Memorization (Hifz)",
     short:
-      "Memorization is the heart of the Institute. Students learn the Qur'ān portion by portion, revise it until it is secure, and are corrected in recitation as they go. The pace is measured, and it follows the student.",
+      "Memorization is the heart of the Institute. Each portion is learned, revised until it is secure, and corrected in recitation before the next one begins. The pace is measured, and it follows the student.",
   },
   {
     id: "tajweed",
     number: "02",
     name: "Proper Tajwīd",
     short:
-      "The rules of recitation. Tajwīd teaches students to read the Qur'ān as it was revealed, with correct pronunciation and a steady, beautiful rhythm.",
+      "Tajwīd is the science of recitation. A child who knows it reads the Qur'ān as it was revealed, with correct pronunciation and a steady rhythm.",
   },
   {
     id: "islamic-studies",
     number: "03",
     name: "Islamic Studies",
     short:
-      "The fundamentals of the faith, and the lessons of the Prophets' lives that give them meaning.",
+      "The fundamentals of the faith, and the lives of the Prophets that give them meaning. The point is understanding, not information.",
   },
   {
     id: "arabic",
     number: "04",
     name: "Arabic Language",
     short:
-      "Reading, writing, and understanding the language of the Qur'ān, from its letters to its grammar.",
+      "The language of the Qur'ān, taught from its letters to its grammar, so the child can meet the Qur'ān in its own language.",
   },
   {
     id: "character",
@@ -73,7 +73,7 @@ export const PROGRAMS = [
     number: "06",
     name: "Good Manners",
     short:
-      "Respect for parents and teachers, kindness to others, and good conduct in everyday life.",
+      "Respect for parents and teachers, kindness to others, and good conduct that is noticed at home first.",
   },
 ];
 
@@ -83,10 +83,10 @@ export const PROGRAMS = [
 
 export const WA_MESSAGES = {
   general:
-    "Assalamu Alaikum. I would like to enquire about learning at Mu'ādh ibn Jabal Institute.",
-  hifz: "Assalamu Alaikum. I would like to enquire about the Hifz program at Mu'ādh ibn Jabal Institute.",
+    "Assalamu Alaikum. I would like to ask about learning at Mu'ādh ibn Jabal Institute for my child.",
+  hifz: "Assalamu Alaikum. I would like to ask about Qur'ān memorization for my child at Mu'ādh ibn Jabal Institute.",
   learning:
-    "Assalamu Alaikum. I would like to enquire about physical and online learning at Mu'ādh ibn Jabal Institute.",
+    "Assalamu Alaikum. I would like to ask about online learning at Mu'ādh ibn Jabal Institute.",
 };
 
 /**

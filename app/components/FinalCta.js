@@ -25,16 +25,16 @@ export default function FinalCta() {
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={0.08}>
-            <h2 className="mt-8 font-display text-5xl leading-[1.05] sm:text-6xl">
-              Ready to Begin?
+            <h2 className="mt-8 font-display text-[44px] font-medium leading-[1.08] text-balance md:text-[56px]">
+              The first step is a conversation.
             </h2>
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={0.16}>
-            <p className="mx-auto mt-7 max-w-xl text-base leading-relaxed text-chocolate-700 sm:text-lg">
-              Speak with Mu'ādh ibn Jabal Institute to learn more about our
-              programs, and about physical and online learning. We will be
-              glad to answer your questions.
+            <p className="mx-auto mt-7 max-w-xl text-base leading-[1.7] text-chocolate-700 sm:text-lg">
+              A short message on WhatsApp is all it takes to begin. Tell us
+              about your child, and we will tell you how the studies work,
+              in person or online.
             </p>
           </AnimateOnScroll>
 

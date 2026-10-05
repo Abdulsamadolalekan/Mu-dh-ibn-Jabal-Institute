@@ -17,18 +17,18 @@ export default function Character() {
 
       <div className="container-x relative text-center">
         <AnimateOnScroll>
-          <h2 className="mx-auto max-w-4xl font-display text-[2.6rem] leading-[1.06] text-balance sm:text-6xl lg:text-7xl">
+          <h2 className="mx-auto max-w-4xl font-display text-[44px] font-medium leading-[1.06] text-balance md:text-[58px] lg:text-[68px]">
             Knowledge should shape
             <span className="block italic text-cream-300">character.</span>
           </h2>
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={0.15}>
-          <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-cream-300 sm:text-lg">
+          <p className="mx-auto mt-10 max-w-2xl text-base leading-[1.7] text-cream-300 sm:text-lg">
             We teach students to carry what they learn beyond the classroom,
-            into their manners, their discipline, and the way they treat the
-            people around them. Knowledge that does not shape character is
-            only half learned.
+            into their manners and the way they treat the people around
+            them. Knowledge that does not shape character is only half
+            learned.
           </p>
         </AnimateOnScroll>
       </div>

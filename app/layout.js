@@ -1,15 +1,18 @@
 import "./globals.css";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Cormorant_Garamond, IBM_Plex_Sans } from "next/font/google";
 
-const inter = Inter({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600"],
+  variable: "--font-ibm-plex-sans",
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-playfair-display",
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600"],
+  variable: "--font-cormorant-garamond",
   display: "swap",
 });
 
@@ -48,7 +51,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${ibmPlexSans.variable} ${cormorant.variable}`}>
       <body>{children}</body>
     </html>
   );

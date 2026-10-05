@@ -30,15 +30,15 @@ export default function Footer() {
             <a href="#home" className="flex items-center gap-3.5" aria-label="Back to top">
               <BrandMark className="h-10 w-10 text-cream-50" />
               <span className="flex flex-col leading-tight">
-                <span className="font-display text-[17px] tracking-wide">
+                <span className="font-display text-[19px] font-medium tracking-[0.01em]">
                   Mu'ādh ibn Jabal
                 </span>
-                <span className="text-[10px] font-medium uppercase tracking-[0.34em] text-cream-400">
+                <span className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.34em] text-cream-400">
                   Institute
                 </span>
               </span>
             </a>
-            <p className="mt-6 max-w-xs font-display text-lg italic leading-relaxed text-cream-300">
+            <p className="mt-7 max-w-xs font-display text-[22px] italic leading-[1.35] text-cream-300">
               {TAGLINE}
             </p>
             <p className="mt-6 text-sm leading-relaxed text-cream-400">

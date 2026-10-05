@@ -23,7 +23,7 @@ const STAGES = [
   {
     num: "04",
     title: "Live It",
-    text: "What is learned is carried into manners, discipline, and everyday life.",
+    text: "What is learned is carried home, and into the years after.",
   },
 ];
 
@@ -41,11 +41,11 @@ export default function Journey() {
       <div className="container-x relative">
         <div className="max-w-2xl">
           <AnimateOnScroll>
-            <SectionLabel tone="onLight">04 · The Learning Journey</SectionLabel>
+            <SectionLabel tone="onLight">04 · How We Teach</SectionLabel>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.08}>
-            <h2 className="mt-7 font-display text-4xl leading-[1.08] text-balance sm:text-5xl">
-              A journey built around knowledge and character.
+            <h2 className="mt-7 font-display text-[40px] font-medium leading-[1.1] text-balance md:text-[48px]">
+              From the first letter to everyday life.
             </h2>
           </AnimateOnScroll>
         </div>
@@ -65,13 +65,13 @@ export default function Journey() {
               <li key={stage.num}>
                 <AnimateOnScroll delay={0.15 + i * 0.1}>
                   <span
-                    className="relative z-10 inline-block bg-cream-50 pr-6 font-display text-5xl italic leading-none text-chocolate-400"
+                    className="relative z-10 inline-block bg-cream-50 pr-6 font-display text-[44px] italic leading-none text-chocolate-400"
                     aria-hidden="true"
                   >
                     {stage.num}
                   </span>
-                  <h3 className="mt-6 font-display text-2xl">{stage.title}</h3>
-                  <p className="mt-3 max-w-[15.5rem] text-sm leading-relaxed text-chocolate-700">
+                  <h3 className="mt-6 font-display text-[26px] font-medium md:text-[28px]">{stage.title}</h3>
+                  <p className="mt-3 max-w-[15.5rem] text-[15px] leading-[1.7] text-chocolate-700">
                     {stage.text}
                   </p>
                 </AnimateOnScroll>
@@ -98,8 +98,8 @@ export default function Journey() {
                 <span className="text-[11px] font-medium tracking-[0.3em] text-chocolate-600">
                   {stage.num}
                 </span>
-                <h3 className="mt-2.5 font-display text-2xl">{stage.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-chocolate-700">
+                <h3 className="mt-2.5 font-display text-[26px] font-medium md:text-[28px]">{stage.title}</h3>
+                <p className="mt-2.5 text-[15px] leading-[1.7] text-chocolate-700">
                   {stage.text}
                 </p>
               </AnimateOnScroll>

@@ -22,9 +22,16 @@ export default function Programs() {
             <SectionLabel tone="onLight">02 · Programs</SectionLabel>
           </AnimateOnScroll>
           <AnimateOnScroll delay={0.08}>
-            <h2 className="mt-7 font-display text-4xl leading-[1.08] sm:text-5xl">
-              What We Teach
+            <h2 className="mt-7 font-display text-[40px] font-medium leading-[1.1] md:text-[48px]">
+              The Studies
             </h2>
+          </AnimateOnScroll>
+          <AnimateOnScroll delay={0.14}>
+            <p className="mt-6 max-w-xl text-[15px] leading-[1.7] text-chocolate-700 sm:text-base">
+              None of them stands alone. What a child learns in recitation is
+              deepened in Arabic, and both are carried into the way the
+              child lives.
+            </p>
           </AnimateOnScroll>
         </div>
 
@@ -38,15 +45,15 @@ export default function Programs() {
               >
                 {featured.number}
               </span>
-              <h3 className="mt-6 font-display text-3xl leading-tight text-balance sm:text-4xl">
+              <h3 className="mt-6 font-display text-[27px] font-medium leading-tight text-balance md:text-[30px]">
                 {featured.name}
               </h3>
-              <p className="mt-5 max-w-xl leading-relaxed text-chocolate-700">
+              <p className="mt-5 max-w-xl leading-[1.7] text-chocolate-700">
                 {featured.short}
               </p>
               <div className="mt-8">
                 <CtaLink href={WA_LINKS.hifz} variant="text" tone="onLight" icon="arrow">
-                  Ask about Hifz
+                  Ask about Qur'ān memorization
                 </CtaLink>
               </div>
             </div>
@@ -65,10 +72,10 @@ export default function Programs() {
                   <span className="text-xs font-medium tracking-[0.22em] text-chocolate-600 transition-colors duration-300 group-hover:text-chocolate-950">
                     {program.number}
                   </span>
-                  <h3 className="mt-3 font-display text-2xl">
+                  <h3 className="mt-3 font-display text-[26px] font-medium leading-snug md:text-[28px]">
                     {program.name}
                   </h3>
-                  <p className="mt-2.5 max-w-md text-sm leading-relaxed text-chocolate-700">
+                  <p className="mt-2.5 max-w-md text-[15px] leading-[1.7] text-chocolate-700">
                     {program.short}
                   </p>
                 </div>
@@ -79,7 +86,7 @@ export default function Programs() {
 
         <AnimateOnScroll delay={0.1} className="mt-10">
           <p className="text-sm text-chocolate-600">
-            Not sure where to begin?{" "}
+            Not sure where your child should begin?{" "}
             <a
               href={WA_LINKS.general}
               target="_blank"
